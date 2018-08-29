@@ -3,9 +3,10 @@ pipeline {
       label "jenkins-maven"
     }
     environment {
-      ORG               = 'activiti'
+      ORG               = 'cristianflorescu'
       APP_NAME          = 'ttc-connectors-dummytwitter'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
+    }
     }
     stages {
       stage('CI Build and push snapshot') {
